@@ -18,6 +18,7 @@ import copy
 from apicapi import apic_manager
 from keystoneclient.v2_0 import client as keyclient
 import netaddr
+from networking_cisco.plugins.ml2.drivers.cisco.apic import apic_model
 from neutron.agent.linux import dhcp
 from neutron.agent import securitygroups_rpc
 from neutron.api.v2 import attributes
@@ -33,7 +34,6 @@ from neutron.plugins.common import constants
 from neutron.plugins.ml2 import db as ml2_db
 from neutron.plugins.ml2 import driver_api as api
 from neutron.plugins.ml2 import driver_context
-from neutron.plugins.ml2.drivers.cisco.apic import apic_model
 from neutron.plugins.ml2.drivers import mech_agent
 from neutron.plugins.ml2.drivers import type_vlan  # noqa
 from neutron.plugins.ml2 import models

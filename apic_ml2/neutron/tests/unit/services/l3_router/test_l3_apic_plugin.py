@@ -67,7 +67,7 @@ class TestCiscoApicL3Plugin(testlib_api.SqlTestCase,
                             mocked.ConfigMixin):
     def setUp(self):
         super(TestCiscoApicL3Plugin, self).setUp()
-        mock.patch('neutron.plugins.ml2.drivers.cisco.apic.'
+        mock.patch('networking_cisco.plugins.ml2.drivers.cisco.apic.'
                    'apic_model.ApicDbModel').start()
         mocked.ControllerMixin.set_up_mocks(self)
         mocked.ConfigMixin.set_up_mocks(self)

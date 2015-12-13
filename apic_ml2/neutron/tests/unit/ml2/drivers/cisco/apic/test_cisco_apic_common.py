@@ -238,7 +238,7 @@ class ConfigMixin(object):
             'apic_node_profile': APIC_NODE_PROF,
             'apic_entity_profile': APIC_ATT_ENT_PROF,
             'apic_function_profile': APIC_FUNC_PROF,
-            'apic_host_uplink_ports': APIC_UPLINK_PORTS
+            'apic_host_uplink_ports': APIC_UPLINK_PORTS,
         }
         for opt, val in apic_test_config.items():
             cfg.CONF.set_override(opt, val, 'ml2_cisco_apic')

@@ -21,12 +21,12 @@ from oslo_db import exception as db_exc
 from oslo_log import log as logging
 from oslo_messaging import target
 
+from networking_cisco.plugins.ml2.drivers.cisco.apic import apic_model
 from neutron import context as nctx
 from neutron.db import api as db_api
 from neutron.extensions import providernet as api
 from neutron import manager
 from neutron.plugins.common import constants
-from neutron.plugins.ml2.drivers.cisco.apic import apic_model
 from neutron.plugins.ml2.drivers import type_vlan  # noqa
 from neutron.plugins.ml2 import models
 
